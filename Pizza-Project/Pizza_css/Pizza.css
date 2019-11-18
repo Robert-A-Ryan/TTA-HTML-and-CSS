@@ -1,0 +1,88 @@
+body {
+    background-color: wheat;
+}
+
+h1 {
+    margin: 0 0px 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(230, 56, 56);
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0,0,0,.75);
+    
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(240, 155, 44);
+    text-shadow: 2px 2px 2px rgba(0,0,0,.75);
+}
+
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#menuBGWrap {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+#menuBg {
+    width: 600px;
+    height: 500px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 30%;
+    height: 210px;
+    margin: 0px 10px;
+    float: left;
+}
+
+.center {
+    width: 30%;
+    height: 210px;
+    float:left;
+}
+
+.right {
+    width: 30%;
+    height: 210px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0; margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 25px auto;
+    box-shadow: 2px 3px rgba(0,0,0,.5)
+}

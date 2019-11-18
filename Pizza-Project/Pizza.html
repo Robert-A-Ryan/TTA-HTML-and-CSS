@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Pizza Drill Demo</title>
+        <link rel="stylesheet" type="text/css" href = "Pizza_css/Pizza.css">
+    </head>
+    
+    <body>
+        <div id="menuBGWrap">
+            <div id="menuBG">
+                <h1>Pizza Drill Tutorial</h1>
+                <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+                <form id="frmMenu">
+                    <div class="menu left">
+                        <h3>Size:</h3>
+                        <input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Small Pizza"> Small Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+                    </div>
+                    <div class="menu center">
+                        <h3>Vegitables:</h3>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Black Olive"> Black Olive<br>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Green Olive"> Green Olive<br>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Mushroom"> Mushroom<br>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Red Bell Pepper"> Red Bell Pepper<br>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Green Bell Pepper"> Green Bell Pepper<br>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Onion"> Onion<br>
+                        <input class="vegis" type="checkbox" name="Vegitables" value="Jalapeno Pepper"> Jalapeno Pepper<br>
+                    </div>
+                    <div class="menu right">
+                        <h3>Meats:</h3>
+                        <input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+                        <input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage<br>
+                        <input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br>
+                        <input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+                        <input class="meats" type="checkbox" name="Meat" value="Bacon (American)"> Bacon (American)<br>
+                        <input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+                        <input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+                    </div>
+                    <div id="cart">
+                        <div id="showText"></div>
+                        <div id="totalPrice"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+
+        <script src="Pizza_JavaScript/Pizza.js"></script>
+    </body>
+</html>
