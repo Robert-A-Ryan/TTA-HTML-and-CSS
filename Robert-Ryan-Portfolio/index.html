@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Robert Ryan Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+   
+<!-- BODY -->
+<body class="background">
+
+    <script>document.body.className += ' fade-out';
+        $(function() {
+            $('body').removeClass('fade-out');});
+    </script>
+
+<!-- NAVIGATION BAR-->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a onclick="openForm()">Contact</a>
+    </div>
+
+    <div class="btn cancel" onclick="closeForm()">
+
+<!-- HOME --
+    <br>
+    <br> -->
+
+<!-- VIDEO -->
+    <div id="home">
+        <video autoplay muted loop id="myVideo">
+            <source src="vid/lights.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+<!-- HOME TEXT-->
+    <div class="home-text">
+        <h1 style="color:wheat;">Robert Ryan's Portfolio</h1>
+            <p><strong><center>
+                <q>There are basically two types of people.<br>People who accomplish things,<br>and people who claim to accomplish things.<br>The first group is less crowded.
+                </q>
+                <br>-Mark Twain<br>
+                <br>
+                Hello, I am Robert Ryan. This is my portfolio website.<br>Here you find out all kind of information about<br>my background, experience and education.<br>
+                <br>
+                Thank you for checking it out.<br> Be sure to send me your comments below.
+            </center></strong></p>
+    </div>
+
+<!--SLIDESHOW SECTION-->
+
+<div id="slideshow">
+    <div id="slideshow_background">
+        <div id="slideshow_container">
+
+            <div class="pictures fade">
+                <div class="pic_number">1 of 6</div>
+                    <img class="pic_images" src="img/bandtruck.jpg" style="width: 100%">
+                        <div class="text">I'm available to assist on your project.</div>
+            </div>
+
+            <div class="pictures fade">
+                    <div class="pic_number">1 of 6</div>
+                        <img class="pic_images" src="img/bandc.jpg" style="width: 100%">
+                            <div class="text">I am a full stack software developer,<br>
+                            trained in:<br>
+                        HTML, CSS, JavaScript,</div>
+            </div>
+
+            <div class="pictures fade">
+                    <div class="pic_number">1 of 6</div>
+                        <img class="pic_images" src="img/randc.jpg" style="width: 100%">
+                            <div class="text">the popular programming language Python,</div>
+            </div>
+
+            <div class="pictures fade">
+                    <div class="pic_number">1 of 6</div>
+                        <img class="pic_images" src="img/randco.jpg" style="width: 100%">
+                            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+            </div>
+
+            <div class="pictures fade">
+                    <div class="pic_number">1 of 6</div>
+                        <img class="pic_images" src="img/bandtruck.jpg" style="width: 100%">
+                            <div class="text">back end development, databases and SQL.</div>
+            </div>
+
+            <div class="pictures fade">
+                    <div class="pic_number">1 of 6</div>
+                        <img class="pic_images" src="img/bandtruck.jpg" style="width: 100%">
+                            <div class="text">
+                                <a onclick="openForm()" href="#Contact" style="color: white">Contact me here.</a>
+                            </div>
+            </div>
+            
+            <a class="Previous" onclick="plusPics(-1)">&#10094;</a>
+            <a class="Next" onclick="plusPics(1)">&#10095;</a>
+
+        </div> 
+        <br>
+        
+        <div style="text-align: center">
+            
+            <span class="dot" onclick="currentPic(1)"></span>
+            <span class="dot" onclick="currentPic(2)"></span>
+            <span class="dot" onclick="currentPic(3)"></span>
+            <span class="dot" onclick="currentPic(4)"></span>
+            <span class="dot" onclick="currentPic(5)"></span>
+            <span class="dot" onclick="currentPic(6)"></span>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var picIndex = 1;
+        showPics(picIndex);
+    function plusPics(n) {
+        showPics(picIndex += n);
+    }
+    function currentPic(n) {
+        showPics(picIndex = n);
+    }
+    function showPics(n) {
+        var i;
+        var pics = document.getElementsByClassName("pictures");
+        var dots = document.getElementsByClassName("dot");
+            if (n > pics.length) {picIndex = 1}
+            if (n < 1) {picIndex = pics.length}
+                for (i = 0; i < pics.length; i++) {
+                    pics[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+        pics[picIndex-1].style.display = "block";
+        dots[picIndex-1].className += " active";
+    }
+</script>
+
+<!-- ABOUT SECTION-->
+<div class="row" id="about">
+    <div class="column_2">
+        <img src="img/keyboard.jpg" alt="Keyboard">            
+    </div>
+
+    <div class="column_1">
+        <h1>About</h1>
+            <p>I am a software developer who loves finding solutions. As a father of two, I enjoy time with my family and activities outdoors.<br><br>I am currently attending <a href="https://www.learncodeanywhere.com" target="-blank">The Tech Academy</a>'s Software Developer Boot Camp, and I am training in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, and C# with .NET.<br><br>I will be a full-stack developer and would love to work with you on your project. Contact me below.</p>
+    </div>
+</div>
+
+<!-- GITHUB SECTION -->
+    <div class="row" id="github">
+        <div class="column_1">
+            <h1>GitHub</h1>
+                <p><center>You can view my coding projects on my GitHub profile here:<br><br>
+                <a href="https://github.com/robert-a-ryan" target="_blank">Robert A Ryan GitHub</a></center></p>
+        </div>
+        <div class="column_2">
+            <!--div class=gitHub-->
+            <a href="https://github.com/robert-a-ryan" target="blank"><img src="./img/githubcolor.jpg"  alt="GitHub"></a>
+        </div>
+    </div>
+</div>
+     
+<!-- CONTACT SECTION-->
+<div id="contact">
+        <button onclick="openForm()" class="btn-open"> CONTACT </button>
+        <div class="form-popup" id="myContactForm">
+            <form action="https://formspree.io/coachrobertryan@gmail.com" method="POST" class="form-container">
+                <h1>Contact</h1>
+                    <label for="name">First Name:</label>
+                        <input type="text" id="fname" name="name" placeholder="Please enter your name"> 
+                    <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Please enter your email address">
+                    <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone"
+                        placeholder="Please enter your phone number">
+                    <label for="message">Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Please write your message here">
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <br>
+                        <button type="button" class="btn cancel" animation: moveContact 5s; onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+</div>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <a href="http://www.robert-a-ryan.com" style="color: rgb(234,133,60)";><center>Robert Ryan</center></a>
+</footer>
+
+<script src="js/openForm.js"></script>
+    
+</body>
+</html>
